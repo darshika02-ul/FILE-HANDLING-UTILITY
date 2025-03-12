@@ -1,12 +1,12 @@
 # FILE-HANDLING-UTILITY
-COMPANY: CODTECH IT SOLUTIONS 
-NAME: DARSHIKA R
-INTERN ID: CT08TXH
-DOMAIN: JAVA PROGRAMMING
-DURATION: 4 WEEKS
-MENTOR: NEELA SANTOSH
+*COMPANY*: CODTECH IT SOLUTIONS
+*NAME*: DARSHIKA R
+*INTERN ID*: CT08TXH
+*DOMAIN*: JAVA PROGRAMMING
+*DURATION*: 4 WEEKS
+*MENTOR*: NEELA SANTOSH
 
-TASK 1: CREATE A JAVA PROGRAM TO READ, WRITE, AND MODIFY TEXT FILES.
+##TASK 1: CREATE A JAVA PROGRAM TO READ, WRITE, AND MODIFY TEXT FILES.
 File handling is an essential aspect of programming that enables applications to store, retrieve, and manipulate data persistently. This Java program, named FileHandler, provides an interactive console-based system for managing a text file (sample.txt). It allows users to write content to the file, read existing content, and modify specific words within the file. The program uses the java.io and java.nio.file packages for efficient file operations, ensuring smooth interaction between users and stored data. The core functionality is implemented through three primary methods: writeFile(), readFile(), and modifyFile(), each serving a distinct purpose.
 The program begins execution in the main method, where it continuously prompts the user with a menu of choices using a while(true) loop. The available options include writing to the file, reading from it, modifying content, and exiting the program. A Scanner object is used to take user input, ensuring a seamless experience. When the user selects an option, the corresponding method is invoked to execute the requested operation. If an invalid choice is made, an appropriate error message is displayed, prompting the user to try again. The menu-driven approach makes it easy to navigate, allowing users to perform file operations efficiently.
 The writeFile() method is responsible for appending new content to the file. It utilizes a BufferedWriter object, which is initialized with a FileWriter in append mode (true), ensuring that new data does not overwrite existing content. After writing the user-provided text, a newline is inserted to maintain readability. The flush() method ensures immediate writing to the file, while exception handling prevents errors from disrupting execution. If an IOException occurs, such as file inaccessibility, a descriptive error message is displayed to inform the user.
@@ -14,7 +14,7 @@ The readFile() method is designed to retrieve and display file content line by l
 The modifyFile() method enables users to replace specific words within the file. It leverages the Files.readAllLines() method from the java.nio.file package to read all lines into a list. Each line is processed, and occurrences of the specified word are replaced with the new word provided by the user. The modified lines are then written back to the file using Files.write(), effectively updating the file content. This approach ensures efficient text replacement while maintaining the file’s structure. Exception handling is incorporated to handle potential errors, such as missing files or read/write failures.
 Overall, this program serves as a practical demonstration of file handling in Java. It showcases efficient file operations, proper resource management, and robust error handling, making it a valuable learning tool for anyone interested in Java-based file management. The interactive nature of the program enhances usability, allowing users to perform essential file operations effortlessly.
 
-TASK 2: DELIVERABLE: A SCRIPT DEMONSTRATING FILE OPERATIONS WITH CLEAR DOCUMENTATION.
+##TASK 2: DELIVERABLE: A SCRIPT DEMONSTRATING FILE OPERATIONS WITH CLEAR DOCUMENTATION.
 File handling is a fundamental aspect of programming that allows applications to store, retrieve, modify, and manage data persistently. Java provides the java.io package, which includes various classes to facilitate file operations such as reading, writing, appending, and deleting files. This task demonstrates a simple Java program that performs these operations efficiently while ensuring proper resource management and error handling. The program is structured into multiple methods, each responsible for a specific task: writing to a file, reading from a file, appending data, and deleting a file.
 The writeToFile method is responsible for creating a new file or overwriting an existing one with the provided content. It uses BufferedWriter and FileWriter, which enhance writing performance by buffering the output. If an error occurs, such as insufficient permissions or an inaccessible file, an IOException is caught, preventing the program from crashing. After writing to the file, the program confirms the operation with a console message.
 Once the file is created, the readFromFile method is used to read its content line by line. This method employs BufferedReader and FileReader, ensuring efficient memory usage even for large files. The program first prints a message indicating that it is reading the file, then iterates through the file line by line, displaying the contents on the console. If the file is missing, a FileNotFoundException is handled separately to notify the user that the file does not exist, preventing unexpected crashes.
